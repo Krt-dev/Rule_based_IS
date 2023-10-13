@@ -10,7 +10,7 @@ def identify_pokemon_type():
     elif type == "water":
         return water_pokemon_blue()
     else:
-        print("Its not a starter Pokemon type")
+        "not a starter Pokemon type"
 
 
 def electric_pokemon_yellow():
@@ -105,6 +105,10 @@ def water_pokemon_blue():
 
 # Main program
 if __name__ == "__main__":
+    another = "y"
+    while another == "y":
         print("-------------Welcome to the Starter Pokémon Identification---------------")
         pokemon_name = identify_pokemon_type()
         print("The Pokémon you're describing is", pokemon_name)
+        another = input("Would you like to input another?y/n: ")
+    
